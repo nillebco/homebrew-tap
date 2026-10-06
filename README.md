@@ -3,7 +3,8 @@
 Homebrew formulae for [nillebco](https://github.com/nillebco) tools.
 
 ```sh
-brew install nillebco/tap/<formula>
+brew tap nillebco/tap
+brew install <formula>
 ```
 
 ## Formulae
