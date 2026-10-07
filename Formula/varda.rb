@@ -1,25 +1,25 @@
 class Varda < Formula
   desc "Routes markdown tasks to AI agents (Claude, Codex, Copilot) and tracks their lifecycle"
   homepage "https://github.com/nillebco/varda"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nillebco/varda/releases/download/v0.3.0/varda-aarch64-apple-darwin.tar.xz"
-      sha256 "4251a72d3d94b3f3512b3c13785d02d17a6f9e7edf2b965c7e02a1419e16a165"
+      url "https://github.com/nillebco/varda/releases/download/v0.3.1/varda-aarch64-apple-darwin.tar.xz"
+      sha256 "90bd9fb1c31dafcc1aad18b43676cb615f56bae54d3c1cb5887828a51b5973ff"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nillebco/varda/releases/download/v0.3.0/varda-x86_64-apple-darwin.tar.xz"
-      sha256 "337dadbf92b7b3928f21b8c27a9f1b6353e4c4b149fb2d5dc6d2105a3a0f1732"
+      url "https://github.com/nillebco/varda/releases/download/v0.3.1/varda-x86_64-apple-darwin.tar.xz"
+      sha256 "2d792439553bfb3b0cc60fc6fc6f9140a817ab0bb726c8f710bce0b67af8957a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nillebco/varda/releases/download/v0.3.0/varda-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "67537f68ee6a57029429d5000c81916316a57ecb52ecc03d994163305fbd8e55"
+      url "https://github.com/nillebco/varda/releases/download/v0.3.1/varda-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "bf3ab75e74379defb4659071913c0bce0672840d0900629b528325b5802e29c7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nillebco/varda/releases/download/v0.3.0/varda-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d471b053a1332f2a347deca04aa1a91256f082bc0c29cde2a245c19e9a2bd3a0"
+      url "https://github.com/nillebco/varda/releases/download/v0.3.1/varda-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "30b2287cb21ec1331d623549aadf1a4b843cef076dfa6241624dc2f0ba3e4249"
     end
   end
   license "MIT"
@@ -28,6 +28,7 @@ class Varda < Formula
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
