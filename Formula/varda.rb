@@ -1,25 +1,25 @@
 class Varda < Formula
   desc "Routes markdown tasks to AI agents (Claude, Codex, Copilot) and tracks their lifecycle"
   homepage "https://github.com/nillebco/varda"
-  version "0.5.1"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nillebco/varda/releases/download/v0.5.1/varda-aarch64-apple-darwin.tar.xz"
-      sha256 "b740dc86468ad712236b31fe317a3f020c40061ced334f88eed78265c58e8778"
+      url "https://github.com/nillebco/varda/releases/download/v0.6.0/varda-aarch64-apple-darwin.tar.xz"
+      sha256 "5ec2d9bcff47540983806e7de6c71c4e1f1e21e180b1faa7f7218e1f76bb1fef"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nillebco/varda/releases/download/v0.5.1/varda-x86_64-apple-darwin.tar.xz"
-      sha256 "18b4303a5fe21687981c895b58f282af98440f0802000d8878a8d5be31c47c1e"
+      url "https://github.com/nillebco/varda/releases/download/v0.6.0/varda-x86_64-apple-darwin.tar.xz"
+      sha256 "37f35445df36ef2927436173ead4b7f42eb41913eda3eb5c1b38b21cdb935290"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nillebco/varda/releases/download/v0.5.1/varda-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6445a3381db734a6cc29ef6df2c26d3df25889f1aaf296217e52ce7c34d98820"
+      url "https://github.com/nillebco/varda/releases/download/v0.6.0/varda-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3fc0543aa313b8aa2b3b28e8137eca6e2c4e4de4ab9a0ea060c9190946480d5f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nillebco/varda/releases/download/v0.5.1/varda-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "510ef23633ea94bf2f46cbcee2c819413af9ace0e1f00ce86f62523046888c48"
+      url "https://github.com/nillebco/varda/releases/download/v0.6.0/varda-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "105b0ad22de654ceab687890e0bc96dfc6ddc11e3d1c49fd435d9d751d9e6612"
     end
   end
   license "MIT"
